@@ -1,0 +1,45 @@
+/* frontend/assets/css/styles.css */
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #3B82F6;
+    border-radius: 10px;
+}
+.dark ::-webkit-scrollbar-track {
+    background: #1E293B;
+}
+.dark ::-webkit-scrollbar-thumb {
+    background: #2563EB;
+}
+
+/* Custom animations (extracted from your original index.html's script tag and main.js) */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.animate-fadeInDown {
+    animation: fadeInDown 0.6s ease-out;
+}
+
+/* Keyframes 'float' and 'fadeIn' moved from main.js and corrected to CSS syntax */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
